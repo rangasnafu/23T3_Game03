@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Obstacle : MonoBehaviour
 {
+    public float runSpeed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +15,6 @@ public class Obstacle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(Vector3.forward * runSpeed * Time.deltaTime);
     }
 }
