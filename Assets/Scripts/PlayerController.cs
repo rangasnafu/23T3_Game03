@@ -26,11 +26,6 @@ public class PlayerController : MonoBehaviour
         UpdateMovement1();
         UpdateMovement2();
 
-        if (Input.GetKeyDown(KeyCode.R))
-        {
-            SceneManager.LoadScene("SampleScene");
-            Time.timeScale = 1f;
-        }
 
         if (moveLeft)
         {
@@ -114,6 +109,15 @@ public class PlayerController : MonoBehaviour
     {
         moveLeft = false;
         moveRight = false;
+    }
+
+    public void Reload()
+    {
+        //if (Input.GetKeyDown(KeyCode.R))
+        //{
+            SceneManager.LoadScene("SampleScene");
+            Time.timeScale = 1f;
+        //}
     }
 
     private void OnTriggerEnter(Collider collision)
