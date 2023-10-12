@@ -24,5 +24,10 @@ public class Obstacle : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(this.gameObject);
+        }
     }
 }

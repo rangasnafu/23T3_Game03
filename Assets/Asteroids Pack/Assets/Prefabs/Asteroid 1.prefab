@@ -317,6 +317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 15
+  explosionEffect: {fileID: 5606168106589510008, guid: 26f62b9745b06a945856680f40929e99, type: 3}
 --- !u!65 &4948315831365718483
 BoxCollider:
   m_ObjectHideFlags: 0

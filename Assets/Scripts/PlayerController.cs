@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     public bool moveLeft = false;
     public bool moveRight = false;
 
+    public GameObject timerUI;
 
     // Start is called before the first frame update
     void Start()
@@ -126,6 +127,8 @@ public class PlayerController : MonoBehaviour
         {
             Time.timeScale = 0f;
             gameOverUI.SetActive(true);
+
+            timerUI.SetActive(false);
         }
     }
 }
